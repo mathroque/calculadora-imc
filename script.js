@@ -4,8 +4,10 @@ btn.addEventListener("click", function() {
     let person = document.getElementById('pessoa')
     let height = document.getElementById('altura')
     let weight = document.getElementById('peso')
-    if (person.value == 0 || height.value == 0 || weight.value == 0) {
+    if (person.value == '' || height.value == 0 || weight.value == 0) {
         window.alert('Por favor, preencha todas as informações.')
+    } else if (height.value < 0 || weight.value < 0) {
+        window.alert('Os valores inseridos são inválidos, por favor tente novamente.')
     } else {
         var result = document.getElementById('resultado')
         result.value = ''

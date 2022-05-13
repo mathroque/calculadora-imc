@@ -5,18 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calcule seu IMC</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 </head>
 <body>
+    <header>
+        <img src="logo.png" alt="logo">
+    </header>
     <div id="container">
         <div>
-            <h1>Calcule seu IMC (Índice de massa corporal)</h1>
+            <h1>Calculadora <strong>IMC</strong></h1>
+            <p class="subtitle">Insira os dados para calcular seu Índice de Massa Corporal:</p>
             <form>
                 <fieldset>
                     <legend>Dados</legend>
     
                     <label for="pessoa">
-                        <span>Insira seu nome:</span>
+                        <span>Nome:</span>
                     </label>
                     <br>
                     <input type="text" id="pessoa" placeholder="exemplo: João">
@@ -26,7 +32,7 @@
                         <span>Altura em cm:</span>
                     </label>             
                     <br>
-                    <input type="number" name="altura" id="altura" placeholder="exemplo: 180">
+                    <input type="number" name="altura" id="altura" placeholder="exemplo: 1.80m = 180cm">
                     <br><br>
     
                     <label for="peso">
@@ -38,7 +44,7 @@
                     
                 </fieldset>
             </form>
-            <button id="botao">Calcular</button>
+            <button id="botao"><i class="bi bi-calculator"></i>Calcular</button>
         </div>
     
         <div id="div-res">
