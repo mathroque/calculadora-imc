@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(66, 66, 66);
+}
+h1 {
+    text-align: center;
+    color: rgb(71, 135, 209);
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+span {
+    display: inline-block;
+    font-weight: bold;
+    color: rgb(71, 135, 209);
+}
+form {
+    margin: 0 auto;
+    width: 30%;
+}
+input {
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    font-size: 1.1rem;
+    background: rgb(250, 248, 248);
+    color: rgb(0, 0, 0);
+}
+button {
+    display: block;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    padding: 7px;
+    color: rgb(0, 124, 182);
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 0.4s;
+    border: 1px solid rgb(0, 124, 182);
+    margin: 20px auto 0 auto;
+}
+button:hover {
+    background: rgb(0, 124, 182);
+    color: white;
+    border: none;
+}
+button:active {
+    background: rgb(0, 31, 49);
+    color: rgb(189, 189, 189);
+}
+#div-res {
+    background: rgb(71, 135, 209);
+    width: fit-content;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: none;
+}
+#resultado {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    color: white;
+    padding: 20px;
+}
+#container {
+    width: 1000px;
+    background: rgb(255, 247, 229);
+    border-radius: 30px;
+    padding: 40px;
+    margin: 50px auto 0 auto;
+}
+fieldset {
+    color: rgb(139, 139, 139);
+    border: 1px solid rgba(0, 0, 0, 0.253);
+}
